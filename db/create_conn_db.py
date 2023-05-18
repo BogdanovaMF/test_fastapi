@@ -21,7 +21,6 @@ class Postgres_Loader:
     def __init__(self):
         self.engine = None
         self.model = sqlalchemy.orm.declarative_base()
-        # self.model = declarative_base()
         self.__create_engine()
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
 
