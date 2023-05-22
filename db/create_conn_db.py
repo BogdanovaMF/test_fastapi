@@ -13,7 +13,7 @@ class Postgres_Loader:
 
     drivername = "postgresql"
     host = os.environ.get("DB_HOST")
-    port = os.environ.get("DB_PORT")
+    port = 5435
     username = os.environ.get("DB_USER")
     password = os.environ.get("DB_PASSWORD")
     database = os.environ.get("DB_NAME")
